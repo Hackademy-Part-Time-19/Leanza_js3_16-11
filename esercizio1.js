@@ -1,3 +1,12 @@
+/*
+1. Utilizzare il ciclo for per stampare tutti i nomi della lista
+2. Utilizzare il ciclo for annidato in un altro ciclo for per stampare i nomi carattere per carattere. 
+Il risultato della stampa deve essere lo stesso dell’esercizio precedente.*/ 
+
+
+
+
+
 let array = ["Franco", "Gennaro", "Valerio", "Giulia", "Eugenio"]
 
 
