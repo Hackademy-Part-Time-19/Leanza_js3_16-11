@@ -6,7 +6,6 @@ let saldo = 2000
 
 alert("Buongiorno e benvenuto allo sportello bancario Intesa!")
 let operazione
-let resto 
 while (operazione != 3) {
     operazione = parseInt(prompt("Premi 1 per effettuare un bonifico - Premi 2 per effettuare un prelievo - Premi 3 per uscire"))
     switch (operazione) {
@@ -15,8 +14,8 @@ while (operazione != 3) {
             if (bonifico > saldo) {
                 alert("Siamo spiacenti, il suo saldo è insufficiente.")
             } else{
-                resto = saldo - bonifico
-                alert("Operazione effettuata con successo! Il saldo residuo è: " + resto)
+                saldo = saldo - bonifico
+                alert("Operazione effettuata con successo! Il saldo residuo è: " + saldo)
             }
             break;
         case 2:
@@ -24,8 +23,8 @@ while (operazione != 3) {
             if (prelievo > saldo) {
                 alert("Siamo spiacenti, il suo saldo è insufficiente.")
             } else {
-                resto = saldo - prelievo
-                alert("Operazione effettuata con successo! Il saldo residuo è: " + resto)
+                saldo = saldo - prelievo
+                alert("Operazione effettuata con successo! Il saldo residuo è: " + saldo)
             }
             break;
         case 3:
